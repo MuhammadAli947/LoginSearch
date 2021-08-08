@@ -1,0 +1,10 @@
+mysqlclient==2.0.3
+dash==1.20.0
+PyPDF2==1.26.0
+mysql==0.0.2
+pdftitle==0.9
+Flask==1.1.2
+graphviz==0.16
+pdfminer==20191125
+textblob==0.15.3
+setuptools==49.2.1
