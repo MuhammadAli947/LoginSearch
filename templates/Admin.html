@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Senti Research  </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">\
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Admin Module </h1>
+             </div></br></br></br>
+                <h1 class="bottom">
+                     Senti Research
+                </h1></br>
+              <div class="ml-container">
+       </br></br></br></br></br></br></br></br></br>
+		<form action="{{ url_for('Extract')}}" method="POST">
+		<p>Enter Folder path Containing Pdf's to Extract Data</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="4" cols="50" required></textarea>
+		</br>
+
+		<input type="submit" class="btn-info" value="Extract"><br/><br/>
+
+	</form>
+
+	</div>
+     </br></br></br></br></br></br></br></br></br></br></br></br></br>
+                <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+          </div>
+        </div>
+    </body>
+</html>
