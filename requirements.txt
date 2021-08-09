@@ -126,7 +126,6 @@ pydeck==0.6.2
 pydot==1.4.2
 pydotplus==2.0.2
 Pygments==2.7.3
-pyodbc==4.0.30
 pyparsing==2.4.7
 PyPDF2==1.26.0
 pyrsistent==0.17.3
