@@ -2,7 +2,6 @@ alabaster==0.7.12
 altair==4.1.0
 anyio==2.0.2
 argon2-cffi==20.1.0
-as==0.1
 asgiref==3.2.10
 astor==0.8.1
 async-generator==1.10
