@@ -47,6 +47,11 @@ mysqli = MySQL(app)
 def home():
     return render_template('index.html')
 
+
+@app.route('/test')
+def test():
+    return render_template('index.html')
+
 @app.route('/search', methods=['GET','POST'])
 def search():
     global string
