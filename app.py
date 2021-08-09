@@ -56,6 +56,7 @@ def test():
 def search():
     global string
     if request.method == 'POST':
+        """
         message = request.form['papername']
         searching = message
         print(searching)
@@ -161,7 +162,142 @@ def search():
         # print('val', no)
         Lat.append(-+no)
     # print(Lat)
+    """
 
+    paperName = "Systematic diagonal and vertical errors in antisaccades and memory-guided saccades"
+    References = [('Abel, L A, & Douglas, J (2007) Effects of age on ',),
+                  ('latency and error generation in internally mediated ',),
+                  ('saccades Neurobiol Aging, 28(4), 627637 ',), ('This article is licensed under a',),
+                  ('Creative Commons Attribution 40 International license',),
+                  ('\x0cJournal of Eye Movement Research ',), ('Becker, W (1989) Metrics In R H Wurtz & M E ',),
+                  ('Goldberg (Eds), The Neurobiology of Saccadic Eye ',),
+                  ('Movements (pp 1368) Amsterdam: Amsterdam ',), ('Bell, A H, Everling, S, & Munoz, D P (2000) ',),
+                  ('Influence of Stimulus Eccentricity and Direction on ',),
+                  ('Characteristics of Pro and Antisaccades in Non',),
+                  ('Human Primates J Neurophysiol, 84, 25952604 ',),
+                  ('Dafoe, J M, Armstrong, I T, & Munoz, D P (2007) ',),
+                  ('The influence of stimulus direction and eccentricity ',),
+                  ('on pro and antisaccades in humans Exp Brain Res, ',),
+                  ('Everling, S, & Fischer, B (1998) The antisaccade: a ',),
+                  ('review of basic research and clinical studies ',),
+                  ('Funahashi, S, Bruce, C J, & GoldmanRakic, P S ',),
+                  ('(1990) Visuospatial coding in primate prefrontal ',),
+                  ('neurons revealed by oculomotor paradigms J ',), ('Gnadt, J W, Bracewell, R M, & Andersen, R A ',),
+                  ('(1991) Sensorimotor transformation during eye ',),
+                  ('movements to remembered visual targets Vision Res, ',),
+                  ('Goffart, L, Quinet, J, Chavane, F, & Masson, G S ',),
+                  ('(2006) Influence of background illumination on ',),
+                  ('fixation and visually guided saccades in the rhesus ',), ('monkey Vision Res, 46(12), 149162 ',),
+                  ('Gourtzelidis, P, Smyrnis, N, Evdokimidis, I, & Balogh, ',),
+                  ('A (2001) Systematic errors of planar arm ',),
+                  ('movements provide evidence for space categorization ',),
+                  ('effects and interaction of multiple frames of ',), ('reference Exp Brain Res, 139(1), 5969 ',),
+                  ('Hallett, P (1978) Primary and secondary saccades ',),
+                  ('to goals defined by instructions Vision Res, 18, ',),
+                  ('Hallett, P, & Adams, B (1980) The predictability of ',),
+                  ('saccadic latency in a novel voluntary oculomotor ',),
+                  ('Huttenlocher, J, Hedges, L V, & Duncan, S (1991) ',),
+                  ('Categories and particulars: prototype effects in ',),
+                  ('estimating spatial location Psychol Rev, 98(3), 352',),
+                  ('Hutton, S, & Ettinger, U (2006) The antisaccade task as ',),
+                  ('a research tool in psychopathology: a critical review ',),
+                  ('Abegg M, Lee H, & Barton J S (2010) ',),
+                  ('Systematic bias in antisaccades and memoryguided saccades ',),
+                  ('Kapoula, Z (1985) Evidence for a range effect in the ',),
+                  ('saccadic system Vision Res, 25(8), 11551157 ',),
+                  ('Koehn, J D, Roy, E, & Barton, J J S (2008) The ',),
+                  ('‘diagonal effect’: a systematic error in oblique ',),
+                  ('antisaccades  J Neurophysiol, 100, 587597 ',), ('Krappmann, P (1998) Accuracy of visually and ',),
+                  ('memoryguided antisaccades in man Vision Res, 38, ',),
+                  ('Lueck, C, Tanyeri, S, Crawford, T, Henderson, L, ',), ('& Kennard, C (1990) Antisaccades and ',),
+                  ('remembered saccades in Parkinson’s disease J ',), ('Neurol Neurosurg Psychiatry, 53, 284288 ',),
+                  ('Mantas, A, Evdokimidis, I, & Smyrnis, N (2008) ',),
+                  ('Perception action interaction: the oblique effect in the ',),
+                  ('evolving trajectory of arm pointing movements Exp ',),
+                  ('Munoz, D, & Everling, S (2004) Look away: the anti',),
+                  ('saccade task and the voluntary control of eye ',),
+                  ('movement Nature Reviews Neurosci, 5, 218228 ',),
+                  ('Smyrnis, N, Gourtzelidis, P, & Evdokimidis, I (2000) ',),
+                  ('A systematic directional error in 2D arm movements ',),
+                  ('increases with increasing delay between visual target ',),
+                  ('presentation and movement execution Exp Brain Res, ',),
+                  ('Smyrnis, N, Mantas, A, & Evdokimidis, I (2007) ',),
+                  ('"Motor oblique effect": perceptual direction ',),
+                  ('discrimination and pointing to memorized visual ',),
+                  ('targets share the same preference for cardinal ',),
+                  ('orientations J Neurophysiol, 97(2), 10681077 ',),
+                  ('Stanford, T R, & Sparks, D L (1994) Systematic errors ',),
+                  ('for saccades to remembered targets: evidence for a ',),
+                  ('dissociation between saccade metrics and activity in ',),
+                  ('the superior colliculus Vision Res, 34(1), 93106 ',),
+                  ('Tatler, B W, & Hutton, S B (2007) Trial by trial ',),
+                  ('effects in the antisaccade task Exp Brain Res, 179(3), ',),
+                  ('Theleritis, C, Smyrnis, N, Mantas, A, & Evdokimidis, I ',),
+                  ('(2004) The effects of increasing memory load on the ',),
+                  ('directional accuracy of pointing movements to ',),
+                  ('remembered targets Exp Brain Res, 157(4), 518525 ',),
+                  ('Van Beers, R J (2007) The sources of variability in ',),
+                  ('saccadic eye movements J Neurosci, 27(33), 8757',), ('This article is licensed under a',),
+                  ('Creative Commons Attribution 40 International license',),
+                  ('\x0cJournal of Eye Movement Research ',), ('Abegg M, Lee H, & Barton J S (2010) ',),
+                  ('Systematic bias in antisaccades and memoryguided saccades ',),
+                  ('White, J M, Sparks, D L, & Stanford, T R (1994) ',),
+                  ('Saccades to remembered target locations: an analysis ',),
+                  ('of systematic and variable errors Vision Res, 34(1), ',), ('This article is licensed under a',),
+                  ('Creative Commons Attribution 40 International license',)]
+    Sentiments = ['Positive', 'Nuetral', 'Positive', 'Nuetral', 'Negative', 'Negative', 'Nuetral', 'Negative',
+                  'Nuetral', 'Negative', 'Positive', 'Negative', 'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral',
+                  'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Positive', 'Nuetral', 'Positive', 'Negative',
+                  'Nuetral', 'Negative', 'Negative', 'Nuetral', 'Nuetral', 'Positive', 'Nuetral', 'Negative', 'Nuetral',
+                  'Nuetral', 'Nuetral', 'Nuetral', 'Negative', 'Positive', 'Positive', 'Nuetral', 'Nuetral', 'Negative',
+                  'Positive', 'Positive', 'Nuetral', 'Nuetral', 'Negative', 'Nuetral', 'Nuetral', 'Nuetral', 'Positive',
+                  'Positive', 'Nuetral', 'Nuetral', 'Nuetral', 'Positive', 'Positive', 'Nuetral', 'Positive', 'Nuetral',
+                  'Positive', 'Nuetral', 'Nuetral', 'Nuetral', 'Negative', 'Nuetral', 'Nuetral', 'Positive', 'Negative',
+                  'Negative', 'Positive', 'Nuetral', 'Nuetral', 'Positive', 'Positive', 'Nuetral', 'Positive',
+                  'Nuetral', 'Nuetral', 'Nuetral', 'Negative', 'Nuetral', 'Nuetral', 'Nuetral', 'Positive', 'Nuetral',
+                  'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Negative',
+                  'Negative', 'Nuetral', 'Nuetral', 'Nuetral', 'Negative', 'Nuetral', 'Nuetral', 'Nuetral', 'Positive',
+                  'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Negative', 'Nuetral', 'Nuetral', 'Nuetral',
+                  'Positive', 'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Nuetral', 'Positive', 'Nuetral',
+                  'Positive', 'Nuetral', 'Nuetral', 'Positive', 'Nuetral', 'Negative', 'Nuetral', 'Nuetral', 'Nuetral',
+                  'Positive', 'Positive', 'Nuetral', 'Positive', 'Nuetral', 'Positive', 'Nuetral', 'Nuetral', 'Nuetral',
+                  'Nuetral', 'Positive', 'Nuetral', 'Positive', 'Nuetral', 'Nuetral', 'Nuetral', 'Positive', 'Negative',
+                  'Nuetral']
+
+    NodesList = []
+    SourceList = []
+    TargetList = []
+    IndexVal = []
+    Long = []
+    Lat = []
+
+    lastvalofFirstreferenceslist = 0
+    NodesList.append(paperName)  # adding Citing Paper 1 to create Node list
+    # NodesList.append(paperName2)    # adding Citing Paper 2 to create Node list
+    for i in range(len(References)):  # adding Citing Paper 1 references to create Node list
+        SourceList.append(1)  # adding Citing Paper 1 Name to create Source For target list
+        NodesList.append(References[i])
+        TargetList.append(i + 2)  # adding Citing Paper 1 references to create Edges list
+        lastvalofFirstreferenceslist = i + 3
+    # Sourcelength=len(SourceList)
+    # SourceList.append(SourceList[Sourcelength-1])
+    # TargetList.append(len(TargetList)+2)
+    for i in range(len(NodesList)):
+        IndexVal.append(str(1 + i))
+
+    # print(IndexVal)
+
+    for j in range(len(NodesList)):
+        n = random.randint(1, 50)
+        # print('J',n)
+        Long.append(n)
+    # print(Long)
+
+    for k in range(len(NodesList)):
+        no = random.randint(1, 50)
+        # print('val', no)
+        Lat.append(-+no)
+    # print(Lat)
     print(len(IndexVal))
     print(len(NodesList))
     print(len(SourceList))
